@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import HorizontalScroll from "../utils/horizontal-scroll";
-import { Carousel } from 'react-responsive-carousel';
+import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
 import website from "../assets/websitebg.png";
 import Modal from "../utils/modal/modal";
 import pb1 from "../assets/pb1.png";
@@ -8,10 +8,13 @@ import pb2 from "../assets/pb2.png";
 import pb3 from "../assets/pb3.png";
 import pb4 from "../assets/pb4.png";
 import pb5 from "../assets/pb5.png";
+import pw1 from "../assets/pw1.png";
+import pw2 from "../assets/pw2.png";
+import pw3 from "../assets/pw3.png";
 function Skills() {
     const [modals, setModals] = useState([
-        { id: 1, title: 'Personal Website', cardImage: website, wheel: [], content: 'Personal Website', show: false },
-        { id: 2, title: 'Playlist Builder', cardImage: website, wheel: [pb1, pb2, pb3, pb4, pb5], content: 'Yee yee', show: false },
+        { id: 1, title: 'Personal Website', cardImage: website, wheel: [website, pw1, pw2, pw3], content: "This personal website serves as a comprehensive portfolio, providing a glimpse into the diverse array of projects, skills, and experiences that define my professional identity. Immerse yourself in a visual narrative that highlights my proficiency in various programming languages, frameworks, and technologies. From innovative web applications to robust software solutions, each project reflects my commitment to creativity, problem-solving, and delivering impactful results. As you navigate through my portfolio, you'll discover not only the tangible outcomes of my work but also the strategic thinking, collaboration, and adaptability that underscore my approach. ", show: false },
+        { id: 2, title: 'Playlist Builder', cardImage: website, wheel: [pb1, pb2, pb3, pb4, pb5], content: "", show: false },
         { id: 3, title: 'Car Listing Database', cardImage: website, wheel: [], content: 'Yee yee', show: false },
         { id: 4, title: 'Scott Story', cardImage: website, wheel: [], content: 'Yee yee', show: false },
         { id: 5, title: 'Stock Dock', cardImage: website, wheel: [], content: 'Yee yee', show: false },
@@ -52,15 +55,23 @@ function Skills() {
                 </div>
             </div>
             <Modal title={modal.title} onClose={() => handleClose(modal.id)} show={modal.show}>
-                {modal.content}
-                <Carousel>
-                    {modal.wheel.map((image) =>
-                    (
-                        <div>
-                            <img src={image} />
-                        </div>
-                    ))}
-                </Carousel>
+                <div className="row">
+                    <div className="col-lg-8">
+                        <CCarousel controls >
+                            {modal.wheel.map((image) =>
+                            (
+                                <CCarouselItem>
+                                    <CImage className="d-block w-100" src={image} style={{ width: "90%", height: "90%" }} />
+                                </CCarouselItem>
+
+                            ))}
+                        </CCarousel>
+
+                    </div>
+                    <div className="col-lg-4">
+                        {modal.content}
+                    </div>
+                </div>
             </Modal>
         </div>
 
