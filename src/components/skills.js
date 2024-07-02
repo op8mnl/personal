@@ -11,14 +11,21 @@ import pb5 from "../assets/pb5.png";
 import pw1 from "../assets/pw1.png";
 import pw2 from "../assets/pw2.png";
 import pw3 from "../assets/pw3.png";
+import ss1 from "../assets/ss1.png";
+import co1 from "../assets/co1.png";
+import co2 from "../assets/co2.png";
+import co3 from "../assets/co3.png";
+import co4 from "../assets/co4.png";
+import co5 from "../assets/co5.png";
 function Skills() {
     const [modals, setModals] = useState([
         { id: 1, title: 'Personal Website', cardImage: website, wheel: [website, pw1, pw2, pw3], content: "This personal website serves as a comprehensive portfolio, providing a glimpse into the diverse array of projects, skills, and experiences that define my professional identity. Immerse yourself in a visual narrative that highlights my proficiency in various programming languages, frameworks, and technologies. From innovative web applications to robust software solutions, each project reflects my commitment to creativity, problem-solving, and delivering impactful results. As you navigate through my portfolio, you'll discover not only the tangible outcomes of my work but also the strategic thinking, collaboration, and adaptability that underscore my approach. ", show: false },
-        { id: 2, title: 'Playlist Builder', cardImage: website, wheel: [pb1, pb2, pb3, pb4, pb5], content: "Playlist Builder is a web-based music application crafted on a MERN (MongoDB, Express.js, React, Node.js) stack. Catering to both unauthenticated and authenticated users, the platform seamlessly integrates public playlist exploration with advanced features for authenticated users, including playlist creation, editing, and deletion. The app's versatility enables users to decide whether to share their playlists publicly or maintain a private collection.", show: false },
-        { id: 3, title: 'Car Listing Database', cardImage: website, wheel: [], content: 'Yee yee', show: false },
-        { id: 4, title: 'Scott Story', cardImage: website, wheel: [], content: 'Yee yee', show: false },
-        { id: 5, title: 'Stock Dock', cardImage: website, wheel: [], content: 'Yee yee', show: false },
-        { id: 6, title: 'Code Type', cardImage: website, wheel: [], content: 'Yee yee', show: false },
+        { id: 2, title: 'Playlist Builder', cardImage: pb1, wheel: [pb1, pb2, pb3, pb4, pb5], content: "Playlist Builder is a web-based music application crafted on a MERN (MongoDB, Express.js, React, Node.js) stack. Catering to both unauthenticated and authenticated users, the platform seamlessly integrates public playlist exploration with advanced features for authenticated users, including playlist creation, editing, and deletion. The app's versatility enables users to decide whether to share their playlists publicly or maintain a private collection.", show: false },
+        { id: 3, title: 'Car Listing Database', cardImage: website, wheel: [], content: "Car Listing Database is a practical platform designed  to mimic the systems for vehicle owners to list their new or used cars, facilitating a straightforward buying and selling experience. Utilizing MySQL and grounded in relational database architecture principles, this project ensures efficiency and data integrity. Users can effortlessly list their vehicles, providing detailed information for potential buyers. The 'Car Listing Database' offers a secure and organized space, emphasizing simplicity and reliability for both sellers and buyers in the process of listing and purchasing cars.", show: false },
+        { id: 4, title: 'Scott Story', cardImage: ss1, wheel: [ss1], content: "Scott Story is a 2D hack-and-slash platformer developed in Unity. Immerse yourself in a curated experience as you navigate through environments and engage in fast-paced combat against foes. 'Scott Story' combines gameplay with storytelling, offering players a journey through meticulously designed levels and challenging encounters. With Unity at its core, this project seamlessly blends stunning visuals, responsive controls, and an engaging narrative to deliver an unforgettable gaming experience.", show: false },
+        { id: 5, title: 'Stock Dock', cardImage: website, wheel: [], content: "Stock Dock, is a tailored solution exclusively designed for All Rush Print and Apparel to streamline and automate their intricate printing job processes. Powered by Django, this project optimizes workflows, reducing manual efforts and enhancing overall productivity. 'Stock Dock' leverages the efficiency of Django to simplify the creation of printing jobs, ensuring that All Rush Print and Apparel can seamlessly manage their stock, efficiently process printing jobs, and meet client demands with utmost accuracy", show: false },
+        { id: 6, title: 'Course Outline Generator', cardImage: co3, wheel: [co1, co2, co3, co4, co5], content: "Course Outline Generator is a tool developed to simplify the process of creating and managing course outlines for Western University. Designed with the needs of professors, directors, and administrative positions in mind, this tool facilitates the seamless addition of graduate attributes to course outlines. Professors can easily integrate essential details, while directors and administrators gain the ability to efficiently review, approve, deny, and provide comments on these outlines. The Course Outline Generator not only streamlines the workflow of outlining courses but also ensures a collaborative and effective approach to the approval process.", show: false },
+        { id: 7, title: 'Code Type', cardImage: website, wheel: [], content: "Code Type, an innovative speed typing platform currently in development, is crafted for programmers seeking a fun and engaging way to learn and reinforce commonly used algorithms. With a user-friendly interface and a diverse range of algorithmic challenges, 'Code Type' aims to make algorithmic learning enjoyable and interactive. This project is set to provide an effective method for programmers to enhance their coding skills while revisiting essential algorithms. Stay tuned as 'Code Type' evolves, promising to transform the learning experience into a dynamic and enjoyable journey for programmers of all skill levels.", show: false },
         // Add more modals as needed
     ]);
 
@@ -26,9 +33,7 @@ function Skills() {
 
         setModals((prevModals) =>
             prevModals.map((modal) =>
-
                 modal.id === id ? { ...modal, show: true } : modal
-
             )
         );
     };
