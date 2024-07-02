@@ -306,12 +306,18 @@
   .socials .ico-circle {
     height: 40px;
     width: 40px;
-    font-size: 1.2rem;
     border-radius: 50%;
     line-height: 1.6;
     margin: 0 15px 0 0;
     box-shadow: 0 0 0 3px  var(--accent);
     transition: all 500ms ease;
+  }
+  .badge{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%!important;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 2px  var(--accent);
   }
   
   .socials .ico-circle:hover {
@@ -1011,7 +1017,8 @@
   # Services
   --------------------------------------------------------------*/
   .service-box {
-    background-color: var(--primary);
+    background-color: rgba(34, 34, 34, 0.4);
+    background-blend-mode: multiply;
     padding: 2.5rem 1.3rem;
     border-radius: 1rem;
     margin-bottom: 3rem;

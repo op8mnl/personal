@@ -15,7 +15,7 @@ function Counter() {
     useEffect(() => {
         setWorksCompleted(3);
         setYearsOfExperience(20);
-        setProjectsCompleted(5);
+        setProjectsCompleted(6);
         setAwardsWon(2);
         new PureCounter();
     }, []);

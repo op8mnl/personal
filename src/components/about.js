@@ -43,8 +43,8 @@ function About() {
     }, [])
 
     return (
-        <section id="about" className="about-mf sect-pt4 route" style={{ scrollMarginTop: "7vh" }}>
-            <div className="container">
+        <section id="about" className="about-mf sect-pt4 route" style={{ scrollMarginTop: "7vh" ,marginLeft:"10vw",marginRight:"10vw" }}>
+        
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="box-shadow-full">
@@ -79,7 +79,7 @@ function About() {
                                             </div>
 
 
-                                            <div className='boxcol' style={{ "marginTop": "1rem", "marginLeft": "0.5rem", "maxWidth": "100%" }}>
+                                            <div className='boxcol' style={{ "marginTop": "1vh", "marginLeft": "0.5vw", "maxWidth": "100%" }}>
                                                 <b style={{ "marginLeft": "5%" }}>{login}</b>
                                                 <div style={{ "marginLeft": "5%" }}>{userName}</div>
                                                 <a href="https://github.com/op8mnl?tab=repositories"><input type='button' className="github-box" value={`Repositories:${repoCount}`}></input></a>
@@ -115,7 +115,6 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     );
 }

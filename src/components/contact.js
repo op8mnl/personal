@@ -9,14 +9,13 @@ const Contact = () => {
     return (
         <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style={{ backgroundImage: `url(${bgImg})`, scrollMargin: "-1.5vh" }}>
             <div class="overlay-mf"></div>
-            <div class="container">
-                <div class="row">
+                <div class="row" style={{  marginLeft:"9rem",marginRight:"9rem" }}>
                     <div class="col-sm-12">
                         <div class="contact-mf">
                             <div id="contact" class="box-shadow-full">
-                                <div class="row">
+                                <div class="row" >
                                    
-                                    <div class="col-md-12">
+                                    <div class="col-md-12" >
                                         <div class="title-box-2 pt-4 pt-md-0">
                                             <h5 class="title-left1">
                                                 Get in Touch
@@ -50,7 +49,6 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     );
 };

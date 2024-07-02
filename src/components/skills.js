@@ -19,7 +19,7 @@ import co4 from "../assets/co4.png";
 import co5 from "../assets/co5.png";
 function Skills() {
     const [modals, setModals] = useState([
-        { id: 1, title: 'Personal Website', cardImage: website, wheel: [website, pw1, pw2, pw3], content: "This personal website serves as a comprehensive portfolio, providing a glimpse into the diverse array of projects, skills, and experiences that define my professional identity. Immerse yourself in a visual narrative that highlights my proficiency in various programming languages, frameworks, and technologies. From innovative web applications to robust software solutions, each project reflects my commitment to creativity, problem-solving, and delivering impactful results. As you navigate through my portfolio, you'll discover not only the tangible outcomes of my work but also the strategic thinking, collaboration, and adaptability that underscore my approach. ", show: false },
+        { id: 1, title: 'Personal Website', cardImage: website, wheel: [website, pw1, pw2, pw3], content: "Built as a clean and simple static react app, this personal website is a portfolio to showcase some of the skills, projects, and experiences I have gained over my professional career.", show: false },
         { id: 2, title: 'Playlist Builder', cardImage: pb1, wheel: [pb1, pb2, pb3, pb4, pb5], content: "Playlist Builder is a web-based music application crafted on a MERN (MongoDB, Express.js, React, Node.js) stack. Catering to both unauthenticated and authenticated users, the platform seamlessly integrates public playlist exploration with advanced features for authenticated users, including playlist creation, editing, and deletion. The app's versatility enables users to decide whether to share their playlists publicly or maintain a private collection.", show: false },
         { id: 3, title: 'Richmond Capital Dashboard', cardImage: website, wheel: [], content: 'The Richmond Capital Dashboard was developed for Richmond Capital a student managed fund with around 1M AUM. By utilizing various APIs, we generated insights and provided analytics into the core performance of the portfolios within Richmond Capital. The main focus of this dashboard was to provide stronger visualization of certain data points, an example of this would be creating easily digestible graphical and tabular representations of sector trends calculated through python scripts running ADX Trend Strength Indicators through a 30, 60, and 90 day period.', show: false },
         { id: 4, title: 'Course Outline Generator', cardImage: co3, wheel: [co1, co2, co3, co4, co5], content: "Course Outline Generator is a tool developed to simplify the process of creating and managing course outlines for Western University. Designed with the needs of professors, directors, and administrative positions in mind, this tool facilitates the seamless addition of graduate attributes to course outlines. Professors can easily integrate essential details, while directors and administrators gain the ability to efficiently review, approve, deny, and provide comments on these outlines. The Course Outline Generator not only streamlines the workflow of outlining courses but also ensures a collaborative and effective approach to the approval process.", show: false },
@@ -48,9 +48,9 @@ function Skills() {
     };
     const buildCards = modals.map((modal) => (
 
-        <div className="col-md-4" key={modal.id} style={{ padding: "0px", marginRight: "2rem", marginBottom: "-8rem", width: "45%" }}  >
+        <div className="col-md-4" key={modal.id} style={{ padding: "0px", marginRight: "2vw", marginBottom: "-8vh", width: "30%" }}  >
             <div className="elevatedButton" style={{ zIndex: "10", width: "100%", height: "100%", position: "inherit" }} onClick={() => handleShow(modal.id)}>
-                <div className="service-box" style={{ backgroundImage: `url(${modal.cardImage})`, backgroundSize: "110%", marginBottom: "-6rem"}} >
+                <div className="service-box" style={{ backgroundImage: `url(${modal.cardImage})`, backgroundSize: "100%", marginBottom: "-6vh"}} >
                     <div className="service-ico">
                         <span className="ico-circle"><i className="bi bi-card-checklist"></i></span>
                     </div>
@@ -60,7 +60,7 @@ function Skills() {
 
                 </div>
             </div>
-            <Modal title={modal.title} onClose={() => handleClose(modal.id)} show={modal.show}>
+            <Modal title={modal.title} badgeLink = {modal.link} onClose={() => handleClose(modal.id)} show={modal.show}>
                 <div className="row">
                     <div className="col-lg-8">
                         <CCarousel controls >

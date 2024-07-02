@@ -51,7 +51,7 @@ function Header() {
 
     return (
         <header id="header" className="fixed-top" >
-            <div className="container d-flex align-items-center justify-content-between">
+            <div className="d-flex align-items-center justify-content-between" style={{marginLeft:"10rem",marginRight:"10rem"}}>
 
                 {/* <h1 className="logo"><a style={{ textDecoration: "none" }} href="index.html">DevFolio</a></h1> */}
                 <a href="index.html" className="logo"><img src={logoLight} alt="" className="img-fluid" /></a>

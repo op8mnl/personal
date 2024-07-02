@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
     return (
-        <section id="resume" class="resume box-shadow-full" style={{ marginTop: "15rem", marginLeft:"5rem",marginRight:"5rem" }}>
+        <section id="resume" class="resume box-shadow-full" style={{ marginTop: "15vh", marginLeft:"10vw",marginRight:"10vw" }}>
             <div class="container" data-aos="fade-up">
 
 
@@ -34,16 +34,15 @@ function Resume() {
                         <h3 class="resume-title">Professional Experience</h3>
                         <div class="resume-item">
                             <h4>Software Development Intern, Full Stack Developer</h4>
-                            <h5>May 2023 - April 2024</h5>
+                            <h5>May 2023 - August 2024</h5>
                             <p><em>Trackunit, London, ON </em></p>
                             <ul>
-                                <li>Spearheaded the development of an Internal GraphQL layer serving 100+ endpoints using Java Spring Boot
-                                    and Deploying on the CI/CD pipeline through CircleCI</li>
-                                <li> Utilized Typescript to update 10,000+ resource calls from GCP to AWS S3 allowing efficient DB migration </li>
-                                <li> Created 5+ MySQL and MSSQL database cleaning scripts obfuscating over 5000+ tuples across 8+ schemas
-                                </li>
-                                <li>Developed a marketplace app using Typescript, React, TailwindCSS, and the Trackunit Iris SDK for the Iris
-                                    app marketplace serving over 100 OEMs and Rental Companies</li>
+                                <li> Corrected billing and payment data integrity issues within installer records by addressing 5 mission-critical issues, resulting in the resolution of 37 errors exceeding $4000 in value and potential future losses.</li>
+                                <li> Spearheaded the development of a team internal GraphQL layer serving 100+ endpoints using Java Spring Boot, resulting in a 5x time reduction for developers when implementing API calls.</li>
+                                <li> Utilized Typescript to update 10,000+ resource calls from GCP to AWS S3 allowing efficient DB migration. </li>
+                                <li> Maintained Asana scripts which automatically parsed inbound emails to populate records hourly.</li>
+                                <li> Created MySQL and MSSQL database cleaning scripts obfuscating over 5000+ tuples across 8+ schemas</li>
+                                <li> Developed a web application for an internal marketplace, utilizing an internal SDK to remotely monitor vehicle fuel levels, enhancing fleet monitoring and management for rental companies and OEMs.</li>
                             </ul>
                         </div>
                         <div class="resume-item">
