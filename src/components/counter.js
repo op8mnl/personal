@@ -9,13 +9,13 @@ import consoleIcon from '../assets/consoleIcon.png';
 function Counter() {
     const [worksCompleted, setWorksCompleted] = useState(0);
     const [yearsOfExperience, setYearsOfExperience] = useState(0);
-    const [totalClients, setTotalClients] = useState(0);
+    const [totalClients, setProjectsCompleted] = useState(0);
     const [awardsWon, setAwardsWon] = useState(0);
 
     useEffect(() => {
         setWorksCompleted(3);
         setYearsOfExperience(20);
-        setTotalClients(6);
+        setProjectsCompleted(5);
         setAwardsWon(2);
         new PureCounter();
     }, []);
@@ -34,7 +34,7 @@ function Counter() {
                             </div>
                             <div className="counter-num">
                                 <p className="counter purecounter " data-purecounter-end={worksCompleted}>{worksCompleted}</p>
-                                <span className="counter-text">YEARS OF EXPERIENCE</span>
+                                <span className="counter-text">YEARS OF DEV EXPERIENCE</span>
                             </div>
                         </div>
                     </div>

@@ -2,14 +2,14 @@ import React from 'react';
 
 function Resume() {
     return (
-        <section id="resume" class="resume" style={{ scrollMargin: "17.5vh" }}>
+        <section id="resume" class="resume box-shadow-full" style={{ marginTop: "15rem", marginLeft:"5rem",marginRight:"5rem" }}>
             <div class="container" data-aos="fade-up">
 
 
                 <div className="col-sm-12 mt-5">
                     <div className="title-box text-center">
                         <h3 className="title-a">
-                            Resume
+                            Experiences
                         </h3>
 
                         <div className="line-mf"></div>
@@ -17,24 +17,13 @@ function Resume() {
                 </div>
 
 
-                <div class="row" style={{ paddingLeft: "10vw", paddingRight: "10vw" }}>
+                <div class="row" style={{ paddingLeft: "3vw", paddingRight: "3vw" }}>
                     <div class="col-lg-12" >
                         <div class="row">
-                            <div class="col-lg-4    ">
-                                <h3 class="resume-title">Contact</h3>
-                                <div class="resume-item pb-0">
-                                    <h4>Felix Zheng</h4>
-                                    <ul>
-                                        <p>19 Lancashire Rd, Markham, ON </p>
-                                        <p>(647) 201-8806</p>
-                                        <p>Zheng.Felix@outlook.com</p>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-12">
                                 <h3 class="resume-title">Education</h3>
                                 <div class="resume-item">
-                                    <h4>Bachelors of Engineering Science with Co-Op (BeSC) <br></br> Software Engineering</h4>
+                                    <h4>Bachelors of Engineering Science with Co-Op (BeSC) Software Engineering</h4>
                                     <h5>2020 - 2025</h5>
                                     <p style={{ marginBottom: "0px" }}><em>The University Of Western Ontario, London, ON</em></p>
                                     <p>Dean's Honor List</p>

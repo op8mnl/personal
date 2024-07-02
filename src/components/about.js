@@ -50,17 +50,22 @@ function About() {
                         <div className="box-shadow-full">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <div className="row">
+                                    <div className="row" >
                                         <div className="col-sm-6 col-md-5">
                                             <div className="about-img" ref={image}>
                                                 {isVisible ? <AboutSVG /> : <AboutSVG className='hidden' />}
                                             </div>
                                         </div>
-                                        <div className="col-sm-6 col-md-7">
-                                            <div className="about-info">
-                                                <p><span className="title-s">Name: </span> <span>Felix Zheng</span></p>
-                                                <p><span className="title-s">Email: </span> <span>Zheng.Felix@Outlook.com</span></p>
-                                                <p><span className="title-s">Phone: </span> <span>(647) 201-8806</span></p>
+                                        <div className="col-sm-6 col-md-7" >
+                                            <div className="resume">
+                                                <h3 class="resume-title">Contact</h3>
+                                                <div class="resume-item pb-0">
+                                                    <ul>
+                                                        <p>19 Lancashire Rd, Markham, ON </p>
+                                                        <p>(647) 201-8806</p>
+                                                        <p>Zheng.Felix@outlook.com</p>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -97,10 +102,10 @@ function About() {
                                                 </h5>
                                             </div>
                                             <p className="lead">
-                                                I'm Felix Zheng, a dedicated software engineering student currently on a year-long co-op term at Western University.
+                                                I'm Felix Zheng, a dedicated software engineering student in my final year at Western University.
                                             </p>
                                             <p className="lead">
-                                                Throughout my academic journey and professional experiences, I've had the privilege of delving into the dynamic world of software engineering, where my passion for creating innovative solutions and my love for problem-solving have found their perfect intersection.
+                                                I am passionate about expanding my knowledge through constant exposure to new technologies and practical applications whether that be from working as a software developer or from developing personal projects.
                                             </p>
                                         </div>
                                     </div>
