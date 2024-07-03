@@ -13,7 +13,7 @@ function Counter() {
     const [awardsWon, setAwardsWon] = useState(0);
 
     useEffect(() => {
-        setWorksCompleted(3);
+        setWorksCompleted(5);
         setYearsOfExperience(20);
         setProjectsCompleted(6);
         setAwardsWon(2);
@@ -29,12 +29,12 @@ function Counter() {
                         <div className="counter-box counter-box pt-4 pt-md-0">
                             <div className="counter-ico">
                                 <span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <img src={briefcaseIcon} style={{ width: "70%", height: "70%", opacity: "0.6" }} />
+                                    <img src={clockIcon} style={{ width: "70%", height: "70%", opacity: "0.6" }} />
                                 </span>
                             </div>
                             <div className="counter-num">
                                 <p className="counter purecounter " data-purecounter-end={worksCompleted}>{worksCompleted}</p>
-                                <span className="counter-text">YEARS OF DEV EXPERIENCE</span>
+                                <span className="counter-text">YEARS OF CODING EXPERIENCE</span>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ function Counter() {
                         <div className="counter-box pt-4 pt-md-0">
                             <div className="counter-ico">
                                 <span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                                    <img src={clockIcon} style={{ width: "70%", height: "70%", opacity: "0.6" }} />
+                                    <img src={briefcaseIcon} style={{ width: "70%", height: "70%", opacity: "0.6" }} />
                                 </span>
                             </div>
                             <div className="counter-num">

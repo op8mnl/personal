@@ -73,7 +73,7 @@ function About() {
                                         <div className="box-shadow-hover round github" >
                                             <img className="transparency" src={githubIcon} />
                                             <div className='boxcol'>
-                                                <a href='https://github.com/op8mnl'>
+                                                <a target="_blank" href='https://github.com/op8mnl'>
                                                     <img className="icon" src={avatarUrl} />
                                                 </a>
                                             </div>
@@ -82,7 +82,7 @@ function About() {
                                             <div className='boxcol' style={{ "marginTop": "1vh", "marginLeft": "0.5vw", "maxWidth": "100%" }}>
                                                 <b style={{ "marginLeft": "5%" }}>{login}</b>
                                                 <div style={{ "marginLeft": "5%" }}>{userName}</div>
-                                                <a href="https://github.com/op8mnl?tab=repositories"><input type='button' className="github-box" value={`Repositories:${repoCount}`}></input></a>
+                                                <a target="_blank" href="https://github.com/op8mnl?tab=repositories"><input type='button' className="github-box" value={`Repositories:${repoCount}`}></input></a>
                                                 <div style={{ "marginLeft": "5%" }}>{`Following: ${followingCount}`}</div>
                                                 <div style={{ "marginLeft": "5%" }}>{`Followers: ${followerCount}`}</div>
                                             </div>

@@ -312,12 +312,19 @@
     box-shadow: 0 0 0 3px  var(--accent);
     transition: all 500ms ease;
   }
-  .badge{
+  .badge-git{
     height: 40px;
     width: 40px;
     border-radius: 50%!important;
     margin: 0 15px 0 0;
     box-shadow: 0 0 0 2px  var(--accent);
+  }
+  .badge-git-disabled{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%!important;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 2px #e0e0e0;
   }
   
   .socials .ico-circle:hover {

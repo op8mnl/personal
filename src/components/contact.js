@@ -29,16 +29,16 @@ const Contact = () => {
                                         </div>
                                         <div class="socials">
                                             <ul>
-                                                <li><a href="https://www.linkedin.com/in/felixzhengg/"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                                <li><a target="_blank" href="https://www.linkedin.com/in/felixzhengg/"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                                     <img src={linkedin} style={{ width: "50%", height: "50%", opacity: "1" }} />
                                                 </span></a></li>
-                                                <li><a href="https://github.com/op8mnl"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                                <li><a target="_blank" href="https://github.com/op8mnl"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                                     <img src={git} style={{ width: "60%", height: "60%", opacity: "1" }} />
                                                 </span></a></li>
-                                                <li><a href="mailto: zheng.felix@outlook.com"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                                <li><a target="_blank" href="mailto: zheng.felix@outlook.com"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                                     <img src={email} style={{ width: "60%", height: "60%", opacity: "1" }} />
                                                 </span></a></li>
-                                                <li><a href="https://drive.google.com/file/d/18nPoe38oPMEVvk82rAZD3Qh22pHO3Oa4/view?usp=sharing"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                                <li><a target="_blank" href="https://drive.google.com/file/d/18nPoe38oPMEVvk82rAZD3Qh22pHO3Oa4/view?usp=sharing"><span className="ico-circle" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                                     <img src={resume} style={{ width: "60%", height: "60%", opacity: "1" }} />
                                                 </span></a></li>
                                             </ul>
