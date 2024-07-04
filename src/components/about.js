@@ -61,7 +61,7 @@ function About() {
                                                 <h3 class="resume-title">Contact</h3>
                                                 <div class="resume-item pb-0">
                                                     <ul>
-                                                        <p>19 Lancashire Rd, Markham, ON </p>
+                                                        <p>Markham, ON </p>
                                                         <p>(647) 201-8806</p>
                                                         <p>Zheng.Felix@outlook.com</p>
                                                     </ul>
