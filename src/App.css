@@ -1031,6 +1031,10 @@
     margin-bottom: 3rem;
     text-align: center;
   }
+
+  .mobile {
+    background-image: none!important;
+  }
   
   .service-box:hover .ico-circle {
     transition: all 500ms ease;

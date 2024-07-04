@@ -1,8 +1,8 @@
 import React from 'react';
-
+import useMobileRendering from '../utils/useMobileRendering';
 function Resume() {
     return (
-        <section id="resume" class="resume box-shadow-full" style={{ marginTop: "15vh", marginLeft:"10vw",marginRight:"10vw" }}>
+        <section id="resume" class="resume box-shadow-full" style={{ marginTop: "15vh", marginLeft:`${useMobileRendering() ? "0vw":"10vw"}`,marginRight:`${useMobileRendering() ? "0vw":"10vw"}` }}>
             <div class="container" data-aos="fade-up">
 
 

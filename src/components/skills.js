@@ -4,6 +4,7 @@ import { CCarousel, CCarouselItem, CImage } from '@coreui/react'
 import website from "../assets/websitebg.png";
 import Modal from "../utils/modal/modal";
 import { Badge } from 'react-bootstrap';
+import useMobileRendering from '../utils/useMobileRendering';
 import pb1 from "../assets/pb1.png";
 import pb2 from "../assets/pb2.png";
 import pb3 from "../assets/pb3.png";
@@ -29,6 +30,7 @@ import sd4 from "../assets/sd4.png";
 import cld1 from "../assets/cld1.png";
 import cld2 from "../assets/cld2.png";
 function Skills() {
+    const isMobile = useMobileRendering();
     const [modals, setModals] = useState([
         { id: 1, title: 'Personal Website',dark:true, cardImage: website, wheel: [pw1, pw2, pw3],badgeWheel:["Complete","Public","React","Bootstrap"],badgeLink:"https://github.com/op8mnl/personal", content: "Built as a clean and simple static react app, this personal website is a portfolio to showcase some of the skills, projects, and experiences I have gained over my professional career.", show: false },
         { id: 2, title: 'Playlist Builder',dark:false, cardImage: pb1, wheel: [pb1, pb2, pb3, pb4, pb5],badgeWheel:["Complete","Public","MongoDB","React","NodeJS","ExpressJS","RESTful","Client-Server", "Firebase Auth"],badgeLink:"https://github.com/op8mnl/Music-Manager", content: "Playlist Builder is a web-based music application developed on a MERN (MongoDB, Express.js, React, Node.js) stack. Catering to both unauthenticated and authenticated users, the platform integrates public playlist exploration with administrative features for authenticated users, including playlist creation, editing, and deletion.", show: false },
@@ -62,7 +64,7 @@ function Skills() {
 
         <div className="col-md-4" key={modal.id} style={{ padding: "0px", marginRight: "2vw", marginBottom: "-8vh", width: "30%" }}  >
             <div className="elevatedButton" style={{ zIndex: "10", width: "100%", height: "100%", position: "inherit" }} onClick={() => handleShow(modal.id)}>
-                <div className="service-box" style={{ backgroundImage: `url(${modal.cardImage})`, backgroundSize: "100%", marginBottom: "-6vh"}} >
+                <div className={isMobile ? "service-box mobile" : "service-box"} style={{ backgroundImage: `url(${modal.cardImage})`, backgroundSize: "100%", marginBottom: "-6vh"}} >
                     <div className="service-ico">
                         <span className="ico-circle"><i className="bi bi-card-checklist"></i></span>
                     </div>

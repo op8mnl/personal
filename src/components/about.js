@@ -1,6 +1,7 @@
 import { ReactComponent as AboutSVG } from '../assets/developer-svg.svg';
 import React, { useEffect, useRef, useState } from 'react';
 import githubIcon from '../assets/github.png';
+import useMobileRendering from '../utils/useMobileRendering.js';
 function About() {
 
     const image = useRef(null);
@@ -43,8 +44,7 @@ function About() {
     }, [])
 
     return (
-        <section id="about" className="about-mf sect-pt4 route" style={{ scrollMarginTop: "7vh" ,marginLeft:"10vw",marginRight:"10vw" }}>
-        
+        <section id="about" className="about-mf sect-pt4 route" style={{ scrollMarginTop: "7vh" ,marginLeft:`${useMobileRendering() ? "0vw":"10vw"}`,marginRight:`${useMobileRendering() ? "0vw":"10vw"}` }}>
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="box-shadow-full">

@@ -5,12 +5,12 @@ import git from '../assets/githubIcon.png';
 import linkedin from '../assets/linkedinIcon.png';
 import resume from '../assets/resumeIcon.png';
 import email from '../assets/emailIcon.png';
+import useMobileRendering from '../utils/useMobileRendering';
 const Contact = () => {
     return (
         <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style={{ backgroundImage: `url(${bgImg})`, scrollMargin: "-1.5vh" }}>
             <div class="overlay-mf"></div>
-                <div class="row" style={{  marginLeft:"9rem",marginRight:"9rem" }}>
-                    <div class="col-sm-12">
+                <div class="row" style={{  marginLeft:`${useMobileRendering() ? "0vw":"9vw"}`,marginRight:`${useMobileRendering() ? "0vw":"9vw"}` }}>
                         <div class="contact-mf">
                             <div id="contact" class="box-shadow-full">
                                 <div class="row" >
@@ -44,7 +44,6 @@ const Contact = () => {
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                     </div>
